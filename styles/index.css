@@ -23,7 +23,7 @@ figure {
     margin: 0;
 }
 
-body {
+body, p {
     margin: 0;
     padding: 0;
 }
@@ -93,7 +93,7 @@ nav {
     outline: none;
 }
 
-.nav-link-active {
+.nav-link.active {
     font-size: 20px;
     text-decoration: underline;
 }
@@ -149,7 +149,7 @@ nav {
     text-decoration: none;
     font-family: 'GraphikR';
     display: block;
-    width: 230px;
+    padding: 0px 50px;
     height: 50px;
     font-size: 20px;
     line-height: 50px;
@@ -194,7 +194,14 @@ h4 {
     line-height: 40px;
 }
 
-.page-1 {
+h3 {
+    font-family: 'GraphikR';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.page.page-vertical-center {
     align-items: center;
 }
 
@@ -207,4 +214,81 @@ h4 {
 
 .page-2__content h2, .page-2__content h4 {
     text-align: center;
+}
+
+.page-2__cards {
+    margin: 80px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 150px;
+    text-align: center;
+}
+
+.page-2__text {
+    font-family: 'GraphikR';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.page-2__video {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 455px;
+    margin: 30px 0px;
+}
+
+.page-2__video video {
+    position: absolute;
+    width: 100%;
+    border-radius: 30px;
+    width: 800px;
+    height: 450px;    
+    box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.15);
+    display: none;
+}
+
+.page-2__video video.active {
+    display: block;
+}
+
+.page-2__video figure {
+    z-index: 100;
+    border-radius: 30px;
+    width: 805px;
+    height: 455px;
+}
+
+.page-2__video figure img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 30px;
+    padding: 0px;
+    box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.15);
+}
+
+.page-2__video-preview {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.page-2__video-preview.active {
+    display: flex;
+}
+
+.page-2__video-preview-button {
+    position: absolute;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    z-index: 999;
+    padding: 0;
 }
