@@ -164,6 +164,7 @@ nav {
     line-height: 50px;
     text-align: center;
     border-radius: 28px;
+    text-decoration: none;
 }
 
 .btn:hover {
@@ -187,6 +188,20 @@ nav {
     box-shadow: 0px 0px 0px 5px rgba(32, 144, 249, 0.5);
 }
 
+.btn-white {
+    color: rgb(32, 145, 249);
+    background-color: #fff;
+}
+
+.btn-white:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.btn-white:focus {
+    background-color: rgb(230, 230, 230);
+    box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.5);
+}
+
 h2 {
     font-family: 'GraphikR';
     font-weight: 400;
@@ -205,6 +220,13 @@ h3 {
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
+}
+
+h6 {
+    font-family: 'GraphikR';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
 }
 
 .page.page-vertical-center {
@@ -310,7 +332,7 @@ h3 {
     width: 450px;
     display: grid;
     grid-template-columns: 1fr min-content;
-    column-gap: 20px;
+    column-gap: 10px;
     padding: 40px 0px;
 }
 
@@ -336,7 +358,7 @@ h3 {
     flex-direction: column;
 }
 
-.page-4__items {
+.page-4__items, .page-5__items {
     margin: 30px 0px;
 }
 
@@ -352,4 +374,88 @@ h3 {
     display: grid;
     grid-template-columns: min-content 1fr;
     column-gap: 20px;
+}
+
+.page-5 {
+    background-color: #252B42;
+    padding: 50px 0px;
+}
+
+.page-5__content h2, .page-5__content h4 {
+    text-align: center;
+    color: white;
+}
+
+.page-5__content h4 {
+    margin-bottom: 60px;
+}
+
+.page-5__cards {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    align-items: center;
+}
+
+.page-5__card {
+    width: 200px;
+    padding: 40px;
+    border: 1px solid #DEDEDE;
+    border-radius: 10px;
+    height: inherit;
+}
+
+.page-5__card.main-card {
+    padding: 70px 40px;
+}
+
+.page-5__white-card {
+    background-color: #fff;
+}
+
+.page-5__blue-card {
+    color: #fff;
+    background-color: rgb(32, 145, 249);
+}
+
+.page-5__card h3 {
+    font-family: 'GraphikM';
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.page-5__card h1 {
+    font-family: 'GraphikM';
+    text-align: center;
+    margin: 0px;
+    font-size: 60px;
+    line-height: 70px;
+}
+
+.page-5__card h6 {
+    text-align: center;
+    margin: 0px;
+}
+
+.page-5__card-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.page-5__card-price-text h3, .page-5__card-price-text h6 {
+    text-align: start;
+    margin: 0;
+}
+
+.page-5__card-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.page-5__card-pricing-features h6 {
+    line-height: 35px;
 }
