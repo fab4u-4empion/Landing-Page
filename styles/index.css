@@ -384,9 +384,11 @@ h6 {
 .page-5__content h2, .page-5__content h4 {
     text-align: center;
     color: white;
+    margin: 0;
 }
 
 .page-5__content h4 {
+    margin-top: 30px;
     margin-bottom: 60px;
 }
 
