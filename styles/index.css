@@ -23,9 +23,19 @@ figure {
     margin: 0;
 }
 
+.no-margin {
+    margin: 0!important;
+}
+
 body, p {
     margin: 0;
     padding: 0;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
 }
 
 .page {
@@ -146,7 +156,6 @@ nav {
 .btn {
     margin: 50px 0px;
     color: white;
-    text-decoration: none;
     font-family: 'GraphikR';
     display: block;
     padding: 0px 50px;
@@ -155,17 +164,14 @@ nav {
     line-height: 50px;
     text-align: center;
     border-radius: 28px;
-    border: none;
 }
 
 .btn:hover {
     transition: all 0.2s ease;
-    outline: none;
 }
 
 .btn:focus {
     transition: all 0.2s ease;
-    outline: 0px;
 }
 
 .btn-blue {
@@ -224,7 +230,7 @@ h3 {
     text-align: center;
 }
 
-.page-2__text {
+.text {
     font-family: 'GraphikR';
     font-weight: 400;
     font-size: 18px;
@@ -291,4 +297,35 @@ h3 {
     height: 100px;
     z-index: 999;
     padding: 0;
+}
+
+.page-3__content {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 100px;
+    align-items: center;
+}
+
+.page-3__inpeut-place {
+    width: 450px;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    column-gap: 20px;
+    padding: 40px 0px;
+}
+
+.inp {
+    font-family: 'GraphikR';
+    padding: 0px 50px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 28px;
+    outline: none;
+    border: 2px solid #E8E8E8;
+    background: #F4F4F4;
+}
+
+.inp:focus {
+    transition: all 0.2s ease;
+    box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.15);
 }
