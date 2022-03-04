@@ -306,7 +306,7 @@ h3 {
     align-items: center;
 }
 
-.page-3__inpeut-place {
+.page-3__input-place {
     width: 450px;
     display: grid;
     grid-template-columns: 1fr min-content;
@@ -328,4 +328,28 @@ h3 {
 .inp:focus {
     transition: all 0.2s ease;
     box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.15);
+}
+
+.page-4__content, .page-4__items {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page-4__items {
+    margin: 30px 0px;
+}
+
+.page-4__content h2, .page-4__content h4 {
+    text-align: center;
+}
+
+.page-4__items h4 {
+    margin: 60px 0px;
+}
+
+.page-4__avatar {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 20px;
 }
