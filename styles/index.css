@@ -404,7 +404,6 @@ h6 {
     padding: 40px;
     border: 1px solid #DEDEDE;
     border-radius: 10px;
-    height: inherit;
 }
 
 .page-5__card.main-card {
@@ -460,4 +459,31 @@ h6 {
 
 .page-5__card-pricing-features h6 {
     line-height: 35px;
+}
+
+.page-6__content h2, .page-6__content h4 {
+    text-align: center;
+}
+
+.page-6__partners-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 45px;
+}
+
+.page-6__partners-table_item {
+    border: 1px solid #D8D8D8;
+    padding: 20px;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-template-rows: 30px 1fr;
+    align-items: center;
+}
+
+.page-6__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
