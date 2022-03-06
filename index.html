@@ -8,19 +8,19 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="page">
-        <header>
+    <header class="page">
+        <div class="header">
             <figure>
-                <img src="/images/png/header_back.png" alt="">
+                <img src="../Lending-Page/images/png/header_back.png" alt="">
             </figure>
             <div class="nav-center">
-                <img width="200" height="75" src="/images/png/nav_center.png" alt="">
+                <img width="200" height="75" src="../Lending-Page/images/png/nav_center.png" alt="">
             </div>
             <div class="content">
                 <div class="nav-bar">
                     <nav>
                         <ul class="nav-list">
-                            <li><a class="nav-link nav-link-active" href="#">Home</a></li>
+                            <li><a class="nav-link active" href="#">Home</a></li>
                             <li><a class="nav-link" href="#">Producte</a></li>
                             <li><a class="nav-link" href="#">Pricing</a></li>
                             <li><a class="nav-link" href="#">About</a></li>
@@ -29,45 +29,350 @@
                     </nav>
                     <div>
                         <ul class="nav-list">
-                            <li><a href="#"><img width="30" height="30" src="/images/svg/nav-r-1.svg" alt=""></a></li>
-                            <li><a href="#"><img width="30" height="30" src="/images/svg/nav-r-2.svg" alt=""></a></li>
-                            <li><a href="#"><img width="30" height="30" src="/images/svg/nav-r-3.svg" alt=""></a></li>
+                            <li><a href="#"><img width="30" height="30" src="../Lending-Page/images/svg/twitter-white.svg"alt=""></a></li>
+                            <li><a href="#"><img width="30" height="30" src="../Lending-Page/images/svg/facebook-white.svg"alt=""></a></li>
+                            <li><a href="#"><img width="30" height="30" src="../Lending-Page/images/svg/linkedin-white.svg"alt=""></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="header-content">
-                    <h1>The best products <br/> start with Figma</h1>
-                    <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br/> Lorem ipsum dolor sit.</h4>
-                    <button class="btn btn-blue" href="#">Try For Free</button>
-                </div>
-            </div>
-        </header>
-    </div>
-    <div class="page page-1">
-        <div class="content">
-            <div class="page-1__content">
-                <div>
-                    <h2>Fastest way to <br /> organize</h2>
+                    <h1>The best products <br /> start with Figma</h1>
                     <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br /> Lorem ipsum dolor sit.</h4>
-                    <button class="btn btn-blue">Try For Free</button>
-                </div>
-                <div class="page-1__img">
-                    <img width="450" height="250" src="/images/svg/Macbook_Pro.svg" alt="">
+                    <button type="button" class="btn btn-blue">Try For Free</button>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="page page-2">
-        <div class="content">
-            <div class="page-2__content">
+    </header>
+    <main>
+        <section class="page page-vertical-center page-1">
+            <div class="content page-1__content">
+                <div>
+                    <h2>Fastest way to <br /> organize</h2>
+                    <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br /> Lorem ipsum dolor sit.</h4>
+                    <button type="button" class="btn btn-blue">Try For Free</button>
+                </div>
+                <div>
+                    <img width="450" height="250" src="../Lending-Page/images/svg/Macbook_Pro.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="page page-2">
+            <div class="content page-2__content">
                 <div>
                     <h2>Futures</h2>
                     <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br /> Lorem ipsum dolor sit.</h4>
                 </div>
+                <div class="page-2__cards">
+                    <div class="page-2__card">
+                        <img src="../Lending-Page/images/svg/figures.svg" alt="">
+                        <h3>OpenType features <br> Variable fonts</h3>
+                        <p class="text">
+                            Lorem ipsum dolor sit
+                            amet consectetur adipisicing elit.
+                            Ducimus voluptatum enim minima?
+                            Lorem ipsum dolor sit.
+        
+                        </p>
+                    </div>
+                    <div class="page-2__card">
+                        <img src="../Lending-Page/images/svg/draw.svg" alt="">
+                        <h3>Design with real data</h3>
+                        <p class="text">
+                            Lorem ipsum dolor sit
+                            amet consectetur adipisicing elit.
+                            Ducimus voluptatum enim minima?
+                            Lorem ipsum dolor sit.
+                        </p>
+                    </div>
+                    <div class="page-2__card">
+                        <img src="../Lending-Page/images/svg/brush.svg" alt="">
+                        <h3>Fastest way to <br> take action</h3>
+                        <p class="text">
+                            Lorem ipsum dolor sit
+                            amet consectetur adipisicing elit.
+                            Ducimus voluptatum enim minima?
+                            Lorem ipsum dolor sit.
+                        </p>
+                    </div>
+                </div>
+                <div class="page-2__video content">
+                    <div class="page-2__video-preview active" id="preview1">
+                        <button type="button" onclick="video1Start()" class="page-2__video-preview-button btn-blue">
+                            <img width="30px" height="30px" src="../Lending-Page/images/svg/play.svg" alt="">
+                        </button>
+                        <figure>
+                            <img src="../Lending-Page/images/png/video1.png" alt="">
+                        </figure>
+                    </div>
+                    <video class="" id="video1" src="../Lending-Page/images/video.mp4" controls></video>
+                </div>
             </div>
-        </div>
-    </div>
-    <script type="text/javascript">        
-    </script>
+        </section>
+        <section class="page page-vertical-center page-3">
+            <div class="content page-3__content">
+                <div>
+                    <img width="500" height="450" src="../Lending-Page/images/svg/subscribe.svg" alt="">
+                </div>
+                <div>
+                    <h3>At your fingertips</h3>
+                    <h2>Lightning fast <br> prototyping</h2>
+                    <div>
+                        <h3 class="no-margin">Subscribe to our Newsletter</h3>
+                        <p class="text">Available exclusivery on Figmaland</p>
+                        <form onsubmit="return false">
+                            <div class="page-3__input-place">
+                                <input placeholder="Yor Email" class="inp" type="email" required>
+                                <button type="submit" class="btn btn-blue no-margin">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page page-vertical-center page-4">
+            <div class="content page-4__content">
+                <h2>Testimonials</h2>
+                <div class="page-4__items">
+                    <img width="150px" src="../Lending-Page/images/svg/logos_ibm.svg" alt="">
+                    <h4>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quas recusandae placeat earum officiis
+                        enim,
+                        perferendis explicabo adipisci iure minima repellendus consectetur, atque neque exercitationem ullam in,
+                        tempora
+                        maxime dicta?
+                    </h4>
+                    <div class="page-4__avatar">
+                        <img src="../Lending-Page/images/png/avatar.png" alt="">
+                        <p class="text">
+                            Organize across <br> Ui designer
+                        </p>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-blue">More Testimonials</button>
+            </div>
+        </section>
+        <section class="page page-5">
+            <div class="content page-5__content">
+                <h2>Pricing</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br /> Lorem ipsum dolor sit.</h4>
+                <div class="page-5__cards">
+                    <div class="page-5__card page-5__white-card">
+                        <div class="page-5__card-content">
+                            <div class="page-5__card-head">
+                                <h3>FREE</h3>
+                                <h6>Organize across all <br> apps by hand</h6>
+                            </div>
+                            <div class="page-5__card-price">
+                                <h1>0</h1>
+                                <div class="page-5__card-price-text">
+                                    <h3>$</h3>
+                                    <h6>Per month</h6>
+                                </div>
+                            </div>
+                            <div class="page-5__card-pricing-features">
+                                <h6>Pricing feature</h6>
+                                <h6>Pricing feature</h6>
+                                <h6>Pricing feature</h6>
+                                <h6>Pricing feature</h6>
+                                <h6>Pricing feature</h6>
+                            </div>
+                            <button type="button" class="btn btn-blue no-margin">Order now</button>
+                        </div>
+                    </div>
+                    <div class="page-5__card page-5__blue-card main-card">
+                        <div class="page-5__card-content">
+                            <div class="page-5__card-head">
+                                <h3>STANDART</h3>
+                                <h6>Organize across all <br> apps by hand</h6>
+                            </div>
+                            <div class="page-5__card-price">
+                                <h1>10</h1>
+                                <div class="page-5__card-price-text">
+                                    <h3>$</h3>
+                                    <h6>Per month</h6>
+                                </div>
+                            </div>
+                            <div class="page-5__card-pricing-features">
+                                <h6>Pricing feature</h6>
+                                <h6>Pricing feature</h6>
+                                <h6>Pricing feature</h6>
+                                <h6>Pricing feature</h6>
+                                <h6>Pricing feature</h6>
+                            </div>
+                            <button type="button" class="btn btn-white no-margin">Order now</button>
+                        </div>
+                    </div>
+                    <div class="page-5__card page-5__white-card">
+                        <div class="page-5__card-content">
+                            <div class="page-5__card-head">
+                                <h3>BUSINESS</h3>
+                                <h6>Organize across all <br> apps by hand</h6>
+                            </div>
+                            <div class="page-5__card-price">
+                                <h1>99</h1>
+                                <div class="page-5__card-price-text">
+                                    <h3>$</h3>
+                                    <h6>Per month</h6>
+                                </div>
+                            </div>
+                            <div class="page-5__card-pricing-features">
+                                <h6>Pricing feature</h6>
+                                <h6>Pricing feature</h6>
+                                <h6>Pricing feature</h6>
+                                <h6>Pricing feature</h6>
+                                <h6>Pricing feature</h6>
+                            </div>
+                            <button type="button" class="btn btn-blue no-margin">Order now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page page-6 page-vertical-center">
+            <div class="content page-6__content">
+                <h2 class="no-margin">Partners</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br /> Lorem ipsum dolor sit.</h4>
+                <div class="page-6__partners-table">
+                    <div class="page-6__partners-table_item">
+                        <h6 class="no-margin">Partner name</h6>
+                        <img src="../Lending-Page/images/svg/logos_google.svg" alt="">
+                    </div>
+                    <div class="page-6__partners-table_item">
+                        <h6 class="no-margin">Partner name</h6>
+                        <img src="../Lending-Page/images/svg/logos_amazon.svg" alt="">
+                    </div>
+                    <div class="page-6__partners-table_item">
+                        <h6 class="no-margin">Partner name</h6>
+                        <img src="../Lending-Page/images/svg/logos_microsoft.svg" alt="">
+                    </div>
+                    <div class="page-6__partners-table_item">
+                        <h6 class="no-margin">Partner name</h6>
+                        <img src="../Lending-Page/images/svg/logos_uber.svg" alt="">
+                    </div>
+                    <div class="page-6__partners-table_item">
+                        <h6 class="no-margin">Partner name</h6>
+                        <img src="../Lending-Page/images/svg/logos_dropbox.svg" alt="">
+                    </div>
+                    <div class="page-6__partners-table_item">
+                        <h6 class="no-margin">Partner name</h6>
+                        <img src="../Lending-Page/images/svg/logos_google.svg" alt="">
+                    </div>
+                    <div class="page-6__partners-table_item">
+                        <h6 class="no-margin">Partner name</h6>
+                        <img src="../Lending-Page/images/svg/logos_uber.svg" alt="">
+                    </div>
+                    <div class="page-6__partners-table_item">
+                        <h6 class="no-margin">Partner name</h6>
+                        <img src="../Lending-Page/images/svg/logos_amazon.svg" alt="">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-blue no-margin">Try For Free</button>
+            </div>
+        </section>
+        <section class="page page-7">
+            <div class="content page-7__content">
+                <h2>Contact Us</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br /> Lorem ipsum dolor sit.</h4>
+                <div class="page-7__contact">
+                    <form class="page-7__contact_form" onsubmit="return false">
+                        <h3>Contact Us</h3>
+                        <input placeholder="Yor Name" class="inp" type="text" required>
+                        <input placeholder="Yor Email" class="inp" type="email" required>
+                        <textarea class="text-area" cols="30" rows="10" required></textarea>
+                        <button type="submit" class="btn btn-blue no-margin">Send</button>
+                    </form>
+                    <div class="page-7__contact_content">
+                        <div class="page-7__cards">
+                            <div class="page-7__card">
+                                <img src="../Lending-Page/images/svg/bx-map-blue.svg" alt="">
+                                <p class="text">
+                                    6386 Spring St undefined Anchorage,
+                                    Georgia 12473 United States
+                                </p>
+                            </div>
+                            <div class="page-7__card">
+                                <img src="../Lending-Page/images/svg/phone-blue.svg" alt="">
+                                <p class="text">
+                                    (999) 999-9999
+                                </p>
+                            </div>
+                            <div class="page-7__card">
+                                <img src="../Lending-Page/images/svg/mail.svg" alt="">
+                                <p class="text">
+                                    donald.trump@example.com
+                                </p>
+                            </div>
+                        </div>
+                        <div class="page-7__contact_map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7555.118654360009!2d-122.41803931335022!3d37.77402512329797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1646563978594!5m2!1sru!2sby"
+                                width="520" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div>
+                            <ul class="page-7__contact_links">
+                                <li><a href="#"><img width="30" height="30" src="../Lending-Page/images/svg/twitter-blue.svg"alt=""></a></li>
+                                <li><a href="#"><img width="30" height="30" src="../Lending-Page/images/svg/facebook-blue.svg"alt=""></a></li>
+                                <li><a href="#"><img width="30" height="30" src="../Lending-Page/images/svg/linkedin-blue.svg"alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer__content">
+            <div class="footer__lists">
+                <div>
+                    <h3 class="no-margin">List 1</h3>
+                    <ul>
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                        <li><a href="#">Item 4</a></li>
+                        <li><a href="#">Item 5</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="no-margin">List 2</h3>
+                    <ul>
+                        <li><a href="#">Long item 1</a></li>
+                        <li><a href="#">Long item 2</a></li>
+                        <li><a href="#">Long item 3</a></li>
+                        <li><a href="#">Long item 4</a></li>
+                        <li><a href="#">Long item 5</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="no-margin">List 3</h3>
+                    <ul>
+                        <li><a href="#">Long item 1</a></li>
+                        <li><a href="#">Long item 2</a></li>
+                        <li><a href="#">Long item 3</a></li>
+                        <li><a href="#">Long item 4</a></li>
+                        <li><a href="#">Long item 5</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__contact">
+                <div>
+                    <div class="footer__contact_item">
+                        <img width="30" height="30" src="../Lending-Page/images/svg/phone-white.svg" alt="">
+                        (999) 999-9999
+                    </div>
+                    <div class="footer__contact_item">
+                        <img width="30" height="30" src="../Lending-Page/images/svg/bx-map-white.svg" alt="">
+                        6386 Spring St undefined Anchorage
+                    </div>
+                    <ul class="footer__contact_links">
+                        <li><a href="#"><img width="30" height="30" src="../Lending-Page/images/svg/twitter-white.svg" alt=""></a></li>
+                        <li><a href="#"><img width="30" height="30" src="../Lending-Page/images/svg/facebook-white.svg" alt=""></a></li>
+                        <li><a href="#"><img width="30" height="30" src="../Lending-Page/images/svg/linkedin-white.svg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script type="text/javascript" src="../Lending-Page/scripts/index.js"></script>
 </body>
 </html>
