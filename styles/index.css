@@ -620,6 +620,7 @@ footer {
     width: inherit;
     height: inherit;
     padding: 0px 10px;
+    outline: none;
 }
 
 .footer__lists a:hover, .footer__lists a:focus {
