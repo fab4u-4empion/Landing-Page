@@ -23,6 +23,36 @@ figure {
     margin: 0;
 }
 
+.social-media-link {
+    outline-offset: 3px;
+}
+
+.social-media-link.white {
+    color: white;
+}
+
+.social-media-link.white:hover, .social-media-link.white:focus {
+    color: lightgray;
+    transition: all 0.2s ease;
+}
+
+.social-media-link.white:focus {
+    outline: white solid 2px;
+}
+
+.social-media-link.blue {
+    color: rgb(32, 145, 249);
+}
+
+.social-media-link.blue:hover, .social-media-link.blue:focus {
+    color: rgb(0, 122, 236);
+    transition: all 0.2s ease;
+}
+
+.social-media-link.blue:focus {
+    outline: rgb(32, 145, 249) solid 2px;
+}
+
 .no-margin {
     margin: 0!important;
 }
@@ -431,7 +461,7 @@ h6 {
     margin-bottom: 5px;
 }
 
-.page-5__card h1 {
+.page-5__price {
     font-family: 'GraphikM';
     text-align: center;
     margin: 0px;
