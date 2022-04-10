@@ -7,8 +7,47 @@
     <link href="../Landing-Page/styles/index.css" rel="stylesheet" type="text/css">
     <title>Document</title>
 </head>
-<body>
-    
+<body class="page">
+    <figure class="back-img">
+        <img src="../Landing-Page/img/png/back.png" alt="">
+    </figure>
+    <header>
+        <h1 class="header__title">
+            Astronomy Picture <br> of the Day
+        </h1>
+        <div id="date" class="header__date"></div>
+        <form class="header__form" onsubmit="return false" id="search-form">
+            <label class="header__form_date-label">
+                Select date
+                <br>
+                <input class="header__form_input" max="" id="date-input" type="date" required>
+            </label>
+            <button class="header__form_button" type="submit">Search</button>
+        </form>
+    </header>
+    <main>
+        <section id="content" class="content content__info">
+            <div>
+                <figure class="figure__img-of-day">
+                    <iframe id="img-of-day__video" src="https://www.youtube.com/embed/RtDSxi-D4KA?rel=0"></iframe>
+                    <img id="img-of-day" src="" alt="">
+                </figure>
+            </div>
+            <div class="content__text-container">
+                <h1 id="img-of-day__title" class="content__title"></h1>
+                <p id="img-of-day__description" class="content__description"></p>
+            </div>
+        </section>
+        <section id="content-error" class="content content__error">
+            Nothing found
+        </section>
+        <section id="content-connection-error" class="content content__error">
+            Connection error
+        </section>
+        <section id="content-loader" class="content content__loader">
+            <div class="content__spinner"></div>
+        </section>
+    </main>
     <script src="../Landing-Page/scripts/index.js"></script>
 </body>
 </html>
