@@ -1,11 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     const data = localStorage.getItem("data")
     const date = localStorage.getItem("date")
-    const input_value = localStorage.getItem("inputValue")
-    if (data && date && input_value) {
+    if (data && date) {
         updateData(JSON.parse(data))
         setDate(date)
-        document.getElementById("date-input").value = input_value
     } else {
         loadData(new Date(Date.now()))
         setDate(Date.now())
@@ -18,13 +16,9 @@ document.getElementById("search-form").addEventListener("submit", () => {
     document.getElementById("content-loader").style.display = "flex"
     document.getElementById("content").style.display = "none"
     document.getElementById("content-error").style.display = "none"
-    const date = new Date(document.getElementById("date-input").value)
+    const date = document.getElementById("date-input").value
     loadData(date)
     setDate(date)
-})
-
-document.getElementById("date-input").addEventListener("change", (e) => {
-    localStorage.setItem("inputValue", e.target.value)
 })
 
 const updateData = (data) => {
@@ -55,12 +49,9 @@ const updateData = (data) => {
 }
 
 const loadData = (date) => {
-    window.addEventListener("offline", offlineHandler)
     document.getElementById("content-connection-error").style.display = "none"
-    const strDate = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate()
-    fetch(`https://api.nasa.gov/planetary/apod?api_key=AxeblXxeEPDiaf1VFgWtGAyTx2CqWgxB39nO9uVe&date=${strDate}`)
+    fetch(`https://api.nasa.gov/planetary/apod?api_key=AxeblXxeEPDiaf1VFgWtGAyTx2CqWgxB39nO9uVe&date=${date}`)
         .then((response) => {
-            window.removeEventListener("offline", offlineHandler)
             return response.json()
         })
         .catch(() => {
@@ -69,7 +60,7 @@ const loadData = (date) => {
         .then((data) => {
             if (data) {
                 localStorage.setItem("data", JSON.stringify(data))
-                localStorage.setItem("date", strDate)
+                localStorage.setItem("date", document.getElementById("date-input").value)
                 updateData(data)
             }
         })
@@ -77,6 +68,7 @@ const loadData = (date) => {
 
 const setDate = (date) => {
     const d = new Date(date)
+    document.getElementById("date-input").value = date
     document.getElementById("date").innerHTML = "Picture of <br>" + d.toLocaleString("ru", {
         year: "numeric",
         month: "numeric",
