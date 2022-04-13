@@ -5,9 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
         updateData(JSON.parse(data))
         setDate(date)
     } else {
-        document.getElementById("date-input").valueAsNumber = Date.now()
-        loadData(document.getElementById("date-input").value)
         setDate(Date.now())
+        loadData(document.getElementById("date-input").value)
     }
 })
 
@@ -67,7 +66,7 @@ const loadData = (date) => {
 
 const setDate = (date) => {
     const d = new Date(date)
-    document.getElementById("date-input").valueAsNumber = date
+    document.getElementById("date-input").valueAsDate = d
     document.getElementById("date").innerHTML = "Picture of <br>" + d.toLocaleString("ru", {
         year: "numeric",
         month: "numeric",
